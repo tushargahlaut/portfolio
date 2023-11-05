@@ -5,24 +5,33 @@
     rgba(34, 170, 195, 0.5) 0%,
     rgba(252, 176, 243, 0.5) 100%
   );
-  padding: 1rem;
+  padding: 3rem 1rem;
+  width: 100%;
+
   .profile-picture-container {
     color: white;
     display: flex;
     justify-content: center;
     .profile-picture-border {
-      height: 50%;
-      width: 50%;
+      height: 70%;
+      width: 70%;
       border-radius: 50%;
       padding: 5px;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: rgb(252, 176, 243);
-      background: linear-gradient(
-        0deg,
-        rgba(252, 176, 243, 1) 0%,
-        rgba(34, 170, 195, 1) 100%
+      background-image: linear-gradient(
+        45deg,
+        hsl(240deg 100% 20%) 0%,
+        hsl(289deg 100% 21%) 11%,
+        hsl(315deg 100% 27%) 22%,
+        hsl(329deg 100% 36%) 33%,
+        hsl(337deg 100% 43%) 44%,
+        hsl(357deg 91% 59%) 56%,
+        hsl(17deg 100% 59%) 67%,
+        hsl(34deg 100% 53%) 78%,
+        hsl(45deg 100% 50%) 89%,
+        hsl(55deg 100% 50%) 100%
       );
       .profile-picture-img {
         height: 100%;
@@ -30,6 +39,55 @@
         object-position: center;
         object-fit: contain;
         border-radius: 50%;
+      }
+    }
+  }
+  .my-information-container {
+    background: white;
+    border-radius: 12px;
+    padding: 4rem 3rem;
+    width: 80%;
+    .my-information-map-cont {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      .my-information-heading {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      .my-information-paragraph {
+        font-size: 25px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-me-container {
+    .profile-picture-container {
+      .profile-picture-border {
+        width: 90%;
+        height: 90%;
+      }
+    }
+    .my-information-container {
+      padding: 10px 0;
+      width: 100%;
+      margin: 20px 0;
+      .my-information-map-cont {
+        .my-information-heading {
+          font-size: 25px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .my-information-paragraph {
+          font-size: 20px;
+          font-weight: 600;
+          text-align: center;
+        }
       }
     }
   }
