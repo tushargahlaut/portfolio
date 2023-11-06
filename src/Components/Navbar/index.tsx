@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Layout, Menu } from "antd";
 import type { MenuProps } from "antd";
 import { NavbarMenuItems } from "../../Utils/helper";
+import Logo from "./../../Assets/images/logo/Logo.svg";
 import "./../../Styles/Navbar.scss";
 
 const { Header } = Layout;
@@ -15,9 +16,6 @@ const Navbar = () => {
   return (
     <Layout>
       <Header className="navbar-header">
-        {/* <div>
-                    <img/>
-                </div> */}
         <Menu
           onClick={onClick}
           selectedKeys={[current]}
