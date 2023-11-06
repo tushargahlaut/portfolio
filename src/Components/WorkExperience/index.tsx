@@ -1,9 +1,12 @@
+import { TypeAnimation } from "react-type-animation";
 import { workExperienceItems } from "../../Utils/helper";
 import "./../../Styles/WorkExperience.scss";
 const WorkExperience = () => {
   return (
     <div className="work-experience-container">
-      <h1 className="work-exp-heading">Work Experience</h1>
+      <h1 className="work-exp-heading">
+        <TypeAnimation sequence={["Work Experience 👨‍💻", 1000]} />
+      </h1>
       <div className="work-experience-map-container">
         {workExperienceItems.map((item) => {
           return (
