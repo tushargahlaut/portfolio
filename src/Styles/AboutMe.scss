@@ -1,10 +1,5 @@
 .about-me-container {
-  background: rgb(34, 170, 195);
-  background: linear-gradient(
-    0deg,
-    rgba(34, 170, 195, 0.5) 0%,
-    rgba(252, 176, 243, 0.5) 100%
-  );
+  background-color: #040d12;
   padding: 3rem 0rem;
   width: 100%;
 
@@ -20,18 +15,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: linear-gradient(
-        45deg,
-        hsl(240deg 100% 20%) 0%,
-        hsl(289deg 100% 21%) 11%,
-        hsl(315deg 100% 27%) 22%,
-        hsl(329deg 100% 36%) 33%,
-        hsl(337deg 100% 43%) 44%,
-        hsl(357deg 91% 59%) 56%,
-        hsl(17deg 100% 59%) 67%,
-        hsl(34deg 100% 53%) 78%,
-        hsl(45deg 100% 50%) 89%,
-        hsl(55deg 100% 50%) 100%
+      background: rgb(4, 13, 18);
+      background: linear-gradient(
+        0deg,
+        rgba(4, 13, 18, 1) 0%,
+        rgba(147, 177, 166, 1) 100%
       );
       .profile-picture-img {
         height: 100%;
@@ -43,10 +31,11 @@
     }
   }
   .my-information-container {
-    background: white;
+    background: #183d3d;
     border-radius: 12px;
     padding: 4rem 3rem;
     width: 80%;
+
     .my-information-map-cont {
       display: flex;
       align-items: center;
@@ -56,10 +45,12 @@
       .my-information-heading {
         font-size: 40px;
         font-weight: bold;
+        color: #afd4c7;
       }
       .my-information-paragraph {
         font-size: 25px;
         font-weight: 400;
+        color: #afd4c7;
       }
     }
   }

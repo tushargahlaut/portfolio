@@ -5,8 +5,11 @@
   flex-direction: column;
   font-family: "Helvetica";
   padding: 3rem 0;
+  padding-bottom: 0;
+  background-color: #040d12;
   .work-exp-heading {
-    padding-left: 3rem;
+    text-align: center;
+    color: #afd4c7;
   }
   .work-experience-map-container {
     display: flex;
@@ -18,6 +21,11 @@
       display: flex;
       flex-direction: column;
       height: 100%;
+      background-color: #183d3d;
+      border-radius: 16px;
+      padding: 16px 24px;
+      margin: 14px 0;
+      color: #afd4c7;
       .work-experience-logo-heading {
         display: flex;
         align-items: center;
